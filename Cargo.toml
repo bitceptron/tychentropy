@@ -1,0 +1,20 @@
+[package]
+name = "tychentropy"
+version = "0.1.0-alpha.1"
+edition = "2021"
+license = "MIT"
+description = "A crate to support bitceptron iso's physical entropy generation and assessment"
+authors = ["Nima Tavakoli Lahijani <nima.tavakkoli.lahijani@gmail.com>"]
+documentation = "https://docs.rs/tychentropy"
+repository = "https://github.com/bitceptron/tychentropy"
+keywords = ["BIP39", "bitcoin", "bitceptron", "entropy", "mnemonic"]
+
+[dependencies]
+bip39 = { version = "2.0.0", features = ["zeroize"] }
+bitcoin = "0.32.3"
+bitvec = "1.0.1"
+getset = "0.1.3"
+nistrs = "0.1.2"
+rand = "0.8.5"
+ring = "0.17.8"
+zeroize = { version = "1.8.1", features = ["derive"] }
